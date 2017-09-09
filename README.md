@@ -76,3 +76,16 @@ Then open *resources/public/cards.html*
 lein clean
 lein cljsbuild once min
 ```
+
+## Instructions for using Spacemacs
+
+* run `lein garden once`
+* launch spacemacs
+* open the project.clj file
+* type `SPC m i` to start clojure repl
+* switch to clj repl
+* type `(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))` to start the server
+* open a browser and connect to `http://localhost:3449`
+* notice that you get a prompt when your browser connects
+* type `(switch-to-build devcards)` to use devcards
+* open a browser and connect to `http://localhost:3449/cards.html`
